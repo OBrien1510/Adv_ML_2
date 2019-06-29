@@ -1,0 +1,5 @@
+#########################
+#   Test Description    #
+#########################
+
+Each test was performed over 1000 episodes with the final episode reward for each episode being recorded. At the end this array was averaged and a 95% confidence interval around that mean was constructed. Wins are classed as any positive final outcome. So if the reward acheived in the final frame of the episode is a positive one the it is likely that the lander has completed the game and received the game winning reward.

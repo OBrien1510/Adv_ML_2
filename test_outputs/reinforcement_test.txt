@@ -1,0 +1,23 @@
+Average Reward over the last 50 episodes -146.31551901986418
+Average Reward over the last 50 episodes -155.90602555262473
+Average Reward over the last 50 episodes -146.83010768288943
+Average Reward over the last 50 episodes -137.5868572748523
+Average Reward over the last 50 episodes -143.00032955656576
+Average Reward over the last 50 episodes -139.14540496792483
+Average Reward over the last 50 episodes -134.25162809443637
+Average Reward over the last 50 episodes -128.03346909537615
+Average Reward over the last 50 episodes -119.27368173211187
+Average Reward over the last 50 episodes -153.17367652398795
+Average Reward over the last 50 episodes -140.35794730846598
+Average Reward over the last 50 episodes -145.93984148203648
+Average Reward over the last 50 episodes -123.42487484927072
+Average Reward over the last 50 episodes -133.81575141437688
+Average Reward over the last 50 episodes -162.4825437710548
+Average Reward over the last 50 episodes -144.3693959743506
+Average Reward over the last 50 episodes -143.3354871645063
+Average Reward over the last 50 episodes -130.6092887146645
+Average Reward over the last 50 episodes -160.59469721976464
+Average Reward over the last 50 episodes -140.4477445063689
+Average episode over 1000 episodes: -141.4447135952707
+Wins over 1000 episodes: 30
+95% confidence Interval: -147.0770807211306 <---> -135.6396362615387

@@ -1,0 +1,15 @@
+#########################
+#   Opening Remarks     #
+#########################
+
+Overall I could not get the reinformcement learned agent to perfectly play the game however it definitely did get better over time with aggregate episodic rewards rising from ~ -400 to closer to -100 with there being a non negligble amount of cases where the agent was able to win the game. However the lack of momentum dimension in the environment observation could often intefer. Interestingly enough after training my model for almost 10,000 epsiodes the agent seemed to learn that it should fall down as fast as possible to get the higher reward below, however because the agent knew nothing about momentum it would simply crash every time. With some more training, it would likely learn to not fall straight down like this, however without a momentum or speed dimension in the environment or some form of gradient applied to the reward applied to the y axis, the agent is unlikely to ever perfectly learn the game. I also needed to tinker with the value function slightly myself to penalize the lander for going upward or or away from the middle more harshly.
+
+In terms of training, the model was trained for a few thousand episodes with 1 epoch per episode. Epsilon was initially set at a round 1 and was subsequently reduced by a factor of 0.005 each episode and a floor was set at 0.1.
+
+######################
+#     Comparison     #   
+######################
+
+3 tests were performed. A test on the supervised model created, one on the reinforcement model and one where the lander would always take random choices. The tests were run for 1000 episodes and a 95% confidence interval for the episodic rewards was constructed for each test. The reinforcement model was the most succesful at the 95% confidence interval with an interval of -147.0770807211306 <---> -135.6396362615387 whilst the random test and the supervised test had confidence intervals of -188.62892419891057 <---> -175.3029688946972 and -288.0821460363916 <---> -265.9491136883579 respectively. The reinforcement test acheived a positive final outcome 30 times or 0.3% of episodes whilst the random acheived 0.1% and the supervised test 0%
+
+As can be seen, a supervised model is quite difficult to train when very exact pixel locations are vital. The supervised model took about a day to train and used up a significant amount of CPU whilst doing so. Also note that this was only on a small sample of the total dataset. The reinforcement test would be training for days at a time, however it was far less CPU intensive. The reason for this increase in time is no doubt due to the need to play multiple episodes, each with an underfined length of time. I had the lunar lander constantly rendering the game visusally to make sure that training continued as expected. This likely added some time to training also. Despite this, the reinforcement was far easier to train due to the fact that large amounts of explicitly labeled data was not required was with the supervised method
